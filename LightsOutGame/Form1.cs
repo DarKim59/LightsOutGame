@@ -1,8 +1,7 @@
-﻿using LightsOutGame.Classes;
+﻿using LightsOutGame.Interfaces;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using LightsOutGame.Interfaces;
 
 namespace LightsOutGame
 {

@@ -16,11 +16,8 @@ namespace LightsOutGame
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //IGrid grid1 = new Grid();
             IGameGrid gameGrid = new GameGrid();
             Application.Run(new Form1(gameGrid));
         }
-
-      
     }
 }

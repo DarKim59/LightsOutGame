@@ -1,8 +1,7 @@
-using System;
 using LightsOutGame.Classes;
-using Xunit;
-using Moq;
 using LightsOutGame.Interfaces;
+using Moq;
+using Xunit;
 
 namespace LightsOutGameTests
 {
