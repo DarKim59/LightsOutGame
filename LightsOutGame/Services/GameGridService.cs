@@ -1,33 +1,15 @@
 ﻿using System;
 using LightsOutGame.Interfaces;
 
-namespace LightsOutGame.Classes
+namespace LightsOutGame.Services
 {
-    public class GameGrid : IGameGrid
+    public class GameGridService : IGameGridService
     {
         private int _numberOfCells = 5;
         private bool[,] _grid;
         private readonly Random _rand;
 
-        public int NumCells
-        {
-            get => _numberOfCells;
-
-            set
-            {
-                if (value < 3)
-                {
-                    value = 3;
-                }
-                else if (value > 5)
-                {
-                    value = 5;
-                }
-                _numberOfCells = value;
-            }
-        }
-
-        public GameGrid()
+        public GameGridService()
         {
             _rand = new Random(); // Set up random number generator
             _grid = new bool[_numberOfCells, _numberOfCells]; //Create Grid
@@ -62,6 +44,24 @@ namespace LightsOutGame.Classes
                     return false;
 
             return true;
+        }
+
+        public int NumCells
+        {
+            get => _numberOfCells;
+
+            set
+            {
+                if (value < 3)
+                {
+                    value = 3;
+                }
+                else if (value > 5)
+                {
+                    value = 5;
+                }
+                _numberOfCells = value;
+            }
         }
 
         private void PopulateAndSetUpGrid(bool newGame)

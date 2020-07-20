@@ -9,9 +9,9 @@ namespace LightsOutGame
     {
         private int GridOffset = 50;
         private int GridLength = 250;
-        private readonly IGameGrid _gameGrid;
+        private readonly IGameGridService _gameGrid;
 
-        public Form1(IGameGrid gameGrid)
+        public Form1(IGameGridService gameGrid)
         {
             InitializeComponent();
             _gameGrid = gameGrid;

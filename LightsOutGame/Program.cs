@@ -1,6 +1,6 @@
 using System;
 using System.Windows.Forms;
-using LightsOutGame.Classes;
+using LightsOutGame.Services;
 using LightsOutGame.Interfaces;
 
 namespace LightsOutGame
@@ -16,7 +16,7 @@ namespace LightsOutGame
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            IGameGrid gameGrid = new GameGrid();
+            IGameGridService gameGrid = new GameGridService();
             Application.Run(new Form1(gameGrid));
         }
     }

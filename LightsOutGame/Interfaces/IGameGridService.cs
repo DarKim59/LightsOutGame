@@ -1,6 +1,6 @@
 ﻿namespace LightsOutGame.Interfaces
 {
-    public interface IGameGrid
+    public interface IGameGridService
     {
         int NumCells { get; set; }
         void StartNewGame();
